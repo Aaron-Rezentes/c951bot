@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Hello :), I am the career advice bot and I'd love to help guide you towards a career best suited to your preferences. 
+    Please select the area of computer science that you enjoy the most. 
+    <reply>
+        <text>hands to keyboard coding</text>
+        <postback>code</postback>
+    </reply>
+    
+    <reply>
+        <text>planning or testing code</text>
+        <postback>plan</postback>
+    </reply>
+    
+    <reply>
+        <text>storing, retrieving, and interpreting data</text>
+        <postback>data</postback>
+    </reply>
+    
+    </template>
+    
+  </category>
+  
+  <category>
+      <pattern>code</pattern>
+      <template>Please select the type of coding you enjoy most.
+      <reply>
+        <text>web development (HTML, Javascript)</text>
+        <postback>frontend</postback>
+    </reply>
+    
+    <reply>
+        <text>programming (Java, Python)</text>
+        <postback>backend</postback>
+    </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>frontend</pattern>
+      <template>I recommend you look into becoming a front-end developer.</template>
+  </category>
+  
+  <category>
+      <pattern>backend</pattern>
+      <template>I recommend you look into becoming a back-end developer.</template>
+  </category>
+  
+ <category>
+      <pattern>plan</pattern>
+      <template>Please select the area of computer science you prefer working with.
+      <reply>
+        <text>back-end programming</text>
+        <postback>backplan</postback>
+    </reply>
+    
+    <reply>
+        <text>front-end web development</text>
+        <postback>frontplan</postback>
+    </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>frontplan</pattern>
+      <template>I recommend you look into becoming a UX designer.</template>
+  </category>
+  
+  <category>
+      <pattern>backplan</pattern>
+      <template>I recommend you look into becoming a tester where you can plan out and enact testing plans.</template>
+  </category>
+  
+  <category>
+      <pattern>data</pattern>
+      <template>I recommend you look into becoming a database admin.</template>
+  </category>
+  
+</aiml>
